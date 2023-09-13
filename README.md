@@ -26,6 +26,8 @@ To run figure for regime 2, run
 To run figure for regime 3, run
 `python RFR_LR_r3.py --F_1 {} --d {} --F_star {} --psi_2 {} --tau {} --lambda_i {}`
 
+{} corresponds to custom numerical settings
+
 All code is distributed under an MIT License. If you find our work or this codebase useful for your research, please cite
 
 ```
@@ -37,4 +39,4 @@ wang2023optimal,
  year={2023},
 }
 ```
-
+If you have any other questions, please raise the issue
