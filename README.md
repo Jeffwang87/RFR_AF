@@ -39,4 +39,4 @@ wang2023optimal,
  year={2023},
 }
 ```
-If you have any other questions, please raise the issue
+If you have any other questions, please raise an issue in GitHub
