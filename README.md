@@ -3,7 +3,7 @@
 This repository supports the ICLR 2023 paper titled "Optimal Activation Functions for the Random Features".
 
 ### Prerequisite
-Mathlab, Mathematica, Pytorch, and Sklearn
+Mathlab, Mathematica, Pytorch, and Scikit-learn
 
 ### Code for Figure 1, Figure 4 and Figure 5
 To generate Figure 1 please run RunMeToGenerateFigure1.nb. It requires Wolfram Mathematica v12.	
