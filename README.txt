@@ -1,3 +1,5 @@
+
+### Introduction
 This repository supports the paper titled "Optimal Activation Functions for the Random Features".
 
 It contains a pdf file with BOTH the main part of the paper and appendices, together, so that the reader can use the links in the pdf to jump from the main paper into to the appendices and vice-versa. 
@@ -16,5 +18,3 @@ These are files RunMeToCheckProofOfTheorem9.nb, RunMeToCheckProofOfTheorem10.nb,
 
 All code is distributed under an MIT License.
 
-An online anonymous version of this repository can be found here 
-https://drive.google.com/drive/folders/1Nx1ZJ3eR6RTm0VOGeljIRMLAWmmylfQn?usp=sharing
