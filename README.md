@@ -1,6 +1,7 @@
 
 ### Introduction
 This repository supports the ICLR 2023 paper titled "Optimal Activation Functions for the Random Features Regression Model".
+https://arxiv.org/pdf/2206.01332.pdf
 
 ### Prerequisite
 Mathlab, Mathematica, Pytorch, and Scikit-learn
