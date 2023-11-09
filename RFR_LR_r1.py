@@ -190,42 +190,43 @@ def RFR_kaiming_result(ratio):
 
 
 # Main
-number = 60
-iteration = 10
-ratio = np.linspace(0, 5, num=number)
-ratio[0] += 0.000001
-final_result = np.zeros(number)
-final_result_xavier = np.zeros(number)
-final_kaiming_result = np.zeros(number)
-
-for i in tqdm(range(iteration)):
-    result_RFR = []
-    result_xavier =[]
-    result_kaiming = []
-    for r in ratio:
-        result_RFR.append(RFR_result(r))
-        result_kaiming.append(RFR_xavier_result(r))
-        result_xavier.append(RFR_kaiming_result(r))
-    final_result += np.array(result_RFR)
-    final_result_xavier += np.array(result_kaiming)
-    final_kaiming_result += np.array(result_xavier)
-
-
-final_result = final_result/iteration
-final_result_xavier = final_result_xavier/iteration
-final_kaiming_result = final_kaiming_result/iteration
-
+if __name__ == "__main__":
+    number = 60
+    iteration = 10
+    ratio = np.linspace(0, 5, num=number)
+    ratio[0] += 0.000001
+    final_result = np.zeros(number)
+    final_result_xavier = np.zeros(number)
+    final_kaiming_result = np.zeros(number)
     
-
-plt.plot(ratio, final_result, marker='o', label= 'Original init')
-plt.plot(ratio, final_result_xavier, marker='o', label= 'Xavier init')
-plt.plot(ratio, final_kaiming_result,marker='o', label='Kaiming init')
-plt.xticks(fontsize=20)
-plt.yticks(fontsize=20)
-plt.ylim(0, 10)
-plt.legend()
-plt.savefig('./RFR_plot_case_regime_1.png')
-
-
+    for i in tqdm(range(iteration)):
+        result_RFR = []
+        result_xavier =[]
+        result_kaiming = []
+        for r in ratio:
+            result_RFR.append(RFR_result(r))
+            result_kaiming.append(RFR_xavier_result(r))
+            result_xavier.append(RFR_kaiming_result(r))
+        final_result += np.array(result_RFR)
+        final_result_xavier += np.array(result_kaiming)
+        final_kaiming_result += np.array(result_xavier)
+    
+    
+    final_result = final_result/iteration
+    final_result_xavier = final_result_xavier/iteration
+    final_kaiming_result = final_kaiming_result/iteration
+    
+        
+    
+    plt.plot(ratio, final_result, marker='o', label= 'Original init')
+    plt.plot(ratio, final_result_xavier, marker='o', label= 'Xavier init')
+    plt.plot(ratio, final_kaiming_result,marker='o', label='Kaiming init')
+    plt.xticks(fontsize=20)
+    plt.yticks(fontsize=20)
+    plt.ylim(0, 10)
+    plt.legend()
+    plt.savefig('./RFR_plot_case_regime_1.png')
+  
+  
 
 
